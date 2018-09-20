@@ -36,3 +36,6 @@ $ gcloud components list
 
 - python && google model class 사용  
 from google.appengine.ext import ndb  
+
+
+* 참조 : [Creating Entity Models](https://cloud.google.com/appengine/docs/standard/python/ndb/db_to_ndb)
