@@ -38,4 +38,44 @@ $ gcloud components list
 from google.appengine.ext import ndb  
 
 
+<br />
+<br />
+
+## gcloud config set  
+
+```
+To set the project property in the core section, run:
+  $ gcloud config set project myProject
+
+To set the zone property in the compute section, run:
+    $ gcloud config set compute/zone asia-east1-b
+
+To disable prompting for scripting, run:
+   $ gcloud config set disable_prompts true
+
+To set a proxy with the appropriate type, and specify the address and port
+ on which to reach it, run:
+
+  $ gcloud config set proxy/type http
+  $ gcloud config set proxy/address 1.234.56.78
+  $ gcloud config set proxy/port 8080
+
+
+
+$ gcloud config set compute/zone asia-northeast1-a
+Updated property [compute/zone].
+
+$ gcloud config list
+[compute]
+zone = asia-northeast1-a
+[core]
+account = xxxx@gmail.com
+disable_usage_reporting = True
+project = info21c-net
+
+Your active configuration is: [default]
+
+````
+
+
 * 참조 : [Creating Entity Models](https://cloud.google.com/appengine/docs/standard/python/ndb/db_to_ndb)
